@@ -19,7 +19,20 @@ Single-binary Go CLI that prints random Pokemon ANSI sprites in the terminal, tr
 
 ### From GitHub Releases
 
-Download the binary for your OS/CPU from the [latest release](https://github.com/brunoorsolon/pokedex-fetch-go/releases/latest).
+Download the archive for your OS/CPU from the [latest release](https://github.com/brunoorsolon/pokedex-fetch-go/releases/latest).
+
+Release assets are named by platform, for example:
+
+```text
+pokedex-fetch-go_1.0.0_linux_amd64.tar.gz
+pokedex-fetch-go_1.0.0_linux_arm64.tar.gz
+pokedex-fetch-go_1.0.0_darwin_amd64.tar.gz
+pokedex-fetch-go_1.0.0_darwin_arm64.tar.gz
+pokedex-fetch-go_1.0.0_windows_amd64.zip
+checksums.txt
+```
+
+The executable inside the archive is named `pokedex-fetch-go` (`pokedex-fetch-go.exe` on Windows).
 
 There are no distro packages yet, so install the binary somewhere in your `PATH`. A good user-local location is `~/.local/bin`:
 
@@ -28,8 +41,9 @@ mkdir -p ~/.local/bin
 ```
 
 ```bash
-# Replace this path with the file you downloaded/extracted
-cp ./pokedex-fetch-go ~/.local/bin/pokedex-fetch-go
+# Linux/macOS example. Replace the archive name with the one you downloaded.
+tar -xzf pokedex-fetch-go_1.0.0_linux_amd64.tar.gz
+cp pokedex-fetch-go_1.0.0_linux_amd64/pokedex-fetch-go ~/.local/bin/pokedex-fetch-go
 ```
 
 ```bash
@@ -55,6 +69,14 @@ Verify the install:
 which pokedex-fetch-go
 pokedex-fetch-go --help
 ```
+
+Optional checksum verification:
+
+```bash
+sha256sum -c checksums.txt
+```
+
+On Windows, extract the `.zip` file and place `pokedex-fetch-go.exe` somewhere in your `PATH`.
 
 ### Build From Source
 
