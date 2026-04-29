@@ -113,6 +113,20 @@ If you use `go install`, make sure your Go bin directory is in `PATH`, usually:
 [[ -d "$HOME/go/bin" ]] && path=("$HOME/go/bin" $path)
 ```
 
+### Maintainer Release Packaging
+
+To build and package all release assets for GitHub Releases:
+
+```bash
+./scripts/package_release.sh v1.0.0
+```
+
+This creates ready-to-upload archives and checksums under:
+
+```text
+dist/v1.0.0/
+```
+
 ## Usage
 
 ```bash
