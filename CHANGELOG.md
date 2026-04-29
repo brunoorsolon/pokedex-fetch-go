@@ -1,6 +1,6 @@
 # Changelog
 
-## [1.0.0] — 2025-XX-XX
+## [1.0.0] — 2026-04-29
 
 `pokedex-fetch-go` is a single-binary Go CLI for showing Pokemon ANSI sprites in the terminal, catching random Pokemon, tracking collection progress, and integrating with `fastfetch`.
 
