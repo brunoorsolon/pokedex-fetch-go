@@ -1,0 +1,24 @@
+# pokedex-fetch-go configuration
+# Place this file at ~/.config/pokedex-fetch-go/config.toml
+
+# Shiny encounter rate (1 in N). Default: 1028
+shiny_rate = 1028
+
+# Boosted shiny rate for completed generations (1 in N). Default: 10
+shiny_rate_boosted = 10
+
+# Sprite size: "small" or "large". Default: "small"
+sprite_size = "small"
+
+# Show Pokemon name with sprite. Default: true
+show_name = true
+
+# Generations to pick from. Default: all
+generations = [1, 2, 3, 4, 5, 6, 7, 8]
+
+# XP awards per catch
+xp_normal = 10
+xp_shiny = 150
+
+# Pokemon to never show (by name)
+excluded = []

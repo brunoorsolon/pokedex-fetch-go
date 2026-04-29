@@ -1,0 +1,35 @@
+# Go build artifacts
+/bin/
+/build/
+/dist/
+*.exe
+*.dll
+*.so
+*.dylib
+*.test
+*.out
+
+# Coverage / profiling output
+coverage.out
+coverage.txt
+*.coverprofile
+*.prof
+
+# Local runtime output
+/output/
+/tmp/
+*.log
+
+# Local environment overrides
+.env
+.env.local
+.env.*.local
+
+# Claude Code / assistant state
+/.claude/
+CLAUDE.md
+
+# OS / editor
+.DS_Store
+.vscode/
+.idea/
