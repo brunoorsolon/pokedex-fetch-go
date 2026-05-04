@@ -28,6 +28,9 @@ coverage.txt
 # Claude Code / assistant state
 /.claude/
 CLAUDE.md
+/plans/
+AGENT.md
+/output/
 
 # OS / editor
 .DS_Store
